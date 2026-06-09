@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>公办本科学费上限</title>
+  <meta name="description" content="一页看懂公办本科普通专业学费上限的政策依据、计算方式和官方样本。" />
+  <meta name="theme-color" content="#fbfaf7" />
+  <style>
+    :root{
+      --bg:#fbfaf7;
+      --paper:#ffffff;
+      --paper2:#f5f3ee;
+      --ink:#1f1f1d;
+      --muted:#6f6b63;
+      --line:#e2ded4;
+      --line2:#d5d0c4;
+      --green:#2f6b4f;
+      --green-soft:#e8f1eb;
+      --max:1080px;
+      --radius:26px;
+      --shadow:0 18px 60px rgba(31,31,29,.06);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#fffdf9 0%,var(--bg) 52%,#f7f4ee 100%);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+      line-height:1.68;
+      letter-spacing:.01em;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(251,250,247,.86);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(226,222,212,.78);
+    }
+    nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:760;letter-spacing:-.03em;display:flex;align-items:center;gap:10px}
+    .mark{width:26px;height:26px;border:1px solid var(--line2);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:13px;background:#fff}
+    .navlinks{display:flex;gap:16px;align-items:center;color:var(--muted);font-size:14px}
+    .navlinks a{padding:4px 0;border-bottom:1px solid transparent}
+    .navlinks a:hover{color:var(--ink);border-color:var(--ink)}
+    .print{border:1px solid var(--line2);background:#fff;border-radius:999px;padding:8px 13px;cursor:pointer;color:var(--ink)}
+    .print:hover{border-color:var(--ink)}
+    .hero{padding:84px 0 48px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);background:var(--green-soft);border:1px solid #d9e6dd;border-radius:999px;padding:7px 12px;font-size:14px;margin-bottom:24px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+    h1{margin:0;max-width:920px;font-size:clamp(42px,7vw,92px);line-height:.98;letter-spacing:-.075em;font-weight:820}
+    .sub{margin:28px 0 0;max-width:760px;color:#383630;font-size:clamp(18px,2.1vw,23px)}
+    .sub strong{color:var(--green);font-weight:820}
+    .hero-grid{margin-top:34px;display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
+    .panel{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px}
+    .big-number{font-size:clamp(84px,13vw,142px);line-height:.85;letter-spacing:-.08em;font-weight:860;color:var(--green);margin:22px 0 16px}
+    .label{color:var(--muted);font-size:14px}
+    .panel h2,.panel h3{margin:0 0 12px;letter-spacing:-.035em;line-height:1.16}
+    .panel p{margin:0;color:var(--muted)}
+    .source-btn{display:inline-flex;margin-top:22px;border:1px solid var(--line2);background:#fff;border-radius:999px;padding:10px 15px;color:var(--ink);font-size:14px}
+    .source-btn:hover{border-color:var(--green);color:var(--green)}
+    section{padding:46px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+    .section-head h2{margin:0;font-size:clamp(28px,4vw,46px);line-height:1.08;letter-spacing:-.055em}
+    .note{margin:0;max-width:620px;color:var(--muted)}
+    .formula{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center}
+    .formula .box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;min-height:112px}
+    .formula b{display:block;font-size:25px;line-height:1.12;letter-spacing:-.04em;margin-bottom:8px}
+    .formula span{color:var(--muted);font-size:14px}
+    .op{color:#a09a8e;font-size:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .province{display:flex;flex-direction:column;gap:14px;min-height:100%}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .tag{border:1px solid var(--line);background:var(--paper2);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:13px;white-space:nowrap}
+    .money{font-size:42px;line-height:1;font-weight:840;letter-spacing:-.06em;color:var(--ink)}
+    .source-row{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+    .pill,.source-row a{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:#fff;color:#4a4740;font-size:13px}
+    .source-row a:hover{border-color:var(--green);color:var(--green)}
+    .table-card{padding:0;overflow:hidden}
+    table{width:100%;border-collapse:collapse;font-size:15px;background:#fff}
+    th,td{padding:16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:var(--paper2);color:var(--muted);font-weight:650}
+    tr:last-child td{border-bottom:0}
+    .ok{color:var(--green);font-weight:760}
+    .calc{display:grid;grid-template-columns:1fr .9fr;gap:18px}
+    .field{display:grid;gap:8px;margin-top:16px}
+    label{font-size:14px;color:var(--muted)}
+    input{width:100%;border:1px solid var(--line2);border-radius:16px;padding:14px 15px;font:inherit;font-size:18px;background:#fff;color:var(--ink);outline:none}
+    input:focus{border-color:var(--green)}
+    .result{background:var(--green-soft);border-color:#d9e6dd}
+    .result-num{font-size:clamp(54px,8vw,84px);font-weight:860;letter-spacing:-.075em;line-height:.95;color:var(--green);margin:18px 0 10px}
+    .family{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;align-items:stretch}
+    .list{display:grid;gap:12px;margin-top:8px}
+    .item{display:flex;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px;color:var(--muted)}
+    .item:last-child{border-bottom:0;padding-bottom:0}
+    .num{width:26px;height:26px;display:grid;place-items:center;border:1px solid var(--line2);border-radius:50%;color:var(--green);font-weight:760;flex:none;background:#fff}
+    .source-list{display:grid;gap:10px}
+    .source-list a{display:flex;justify-content:space-between;gap:14px;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px 16px;color:#34312c}
+    .source-list a:hover{border-color:var(--green);color:var(--green)}
+    .quiet-foot{padding:28px 0 44px;color:#8a857b;font-size:13px;text-align:center}
+    [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+    [data-reveal].in{opacity:1;transform:none}
+    @media (max-width:900px){
+      .hero-grid,.family,.calc{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .formula{grid-template-columns:1fr;gap:10px}
+      .op{display:none}
+      .navlinks a{display:none}
+    }
+    @media (max-width:560px){
+      .wrap{width:min(100% - 28px,var(--max))}
+      nav{height:60px}
+      .brand span:last-child{display:none}
+      .hero{padding:62px 0 34px}
+      section{padding:36px 0}
+      .section-head{display:block}
+      .note{margin-top:10px}
+      .panel{padding:20px;border-radius:21px}
+      th,td{padding:13px 12px;font-size:14px}
+    }
+    @media print{
+      header,.print{display:none!important}
+      body{background:#fff;color:#000}
+      .panel{box-shadow:none;background:#fff;border:1px solid #ddd}
+      a{text-decoration:underline}
+      section{break-inside:avoid;padding:24px 0}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#top"><span class="mark">25</span><span>公办本科学费上限</span></a>
+      <div class="navlinks">
+        <a href="#rule">规则</a>
+        <a href="#samples">样本</a>
+        <a href="#calc">计算</a>
+        <a href="#sources">来源</a>
+        <button class="print" onclick="window.print()">打印</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" data-reveal>
+      <div class="eyebrow"><span class="dot"></span>给家人看的版本</div>
+      <h1>公办本科普通专业，通常不是几万一年。</h1>
+      <p class="sub">先看政策，再看官方数据。公办高校学费有成本分担和政府定价机制，普通专业一般是<strong>几千元/年</strong>，不是凭想象随便收费。</p>
+      <div class="hero-grid">
+        <div class="panel">
+          <div class="label">国务院政策库可查</div>
+          <div class="big-number">25%</div>
+          <p>公办高等学校学费占年生均教育培养成本的比例，最高不得超过 25%。</p>
+          <a class="source-btn" href="https://www.gov.cn/zhengce/zhengceku/2020-08/31/content_5538821.htm" target="_blank" rel="noopener">打开政策来源 ↗</a>
+        </div>
+        <div class="panel">
+          <h2>这页只看一件事</h2>
+          <p>公办本科普通专业的学费，先用“生均培养成本 × 25%”得到上限参照，再和各省公布的实际收费标准对比。这样看，心里会稳很多。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rule" class="wrap" data-reveal>
+      <div class="section-head">
+        <h2>把担心变成一道算式。</h2>
+        <p class="note">只要找到官方公布的年生均教育培养成本，就能得到一个清楚的上限参照。</p>
+      </div>
+      <div class="formula">
+        <div class="box"><b>年生均培养成本</b><span>官方公开数据</span></div>
+        <div class="op">×</div>
+        <div class="box"><b>25%</b><span>政策比例</span></div>
+        <div class="op">=</div>
+        <div class="box"><b>学费上限参照</b><span>再对比实际学费</span></div>
+      </div>
+    </section>
+
+    <section id="samples" class="wrap" data-reveal>
+      <div class="section-head">
+        <h2>三个官方样本。</h2>
+        <p class="note">不用凭感觉判断，直接看公开数据和计算结果。</p>
+      </div>
+      <div class="grid-3">
+        <article class="panel province">
+          <div class="top"><h3>重庆</h3><span class="tag">2025</span></div>
+          <p>年生均教育培养成本：3.33 万元</p>
+          <div class="money">¥8,325</div>
+          <p>3.33 万 × 25% = 8325 元/年；理工类基准学费 5600 元/年。</p>
+          <div class="source-row"><a href="https://fzggw.cq.gov.cn/zwxx/tzgg/202505/t20250526_14655590_wap.html" target="_blank" rel="noopener">官方公告 ↗</a><span class="pill">普通本科样本</span></div>
+        </article>
+        <article class="panel province">
+          <div class="top"><h3>甘肃</h3><span class="tag">官方通知</span></div>
+          <p>生均培养定价成本：29090 元/生·学年</p>
+          <div class="money">¥7,272</div>
+          <p>29090 × 25% ≈ 7272 元/年；文史、理工、医学等普通专业多在几千元区间。</p>
+          <div class="source-row"><a href="https://www.ghx.gov.cn/ghx/zfxxgk/fdzdgknr/xzsyxsf/art/2026/art_1501eee63d3641afb15cc5ad40d01e94.html" target="_blank" rel="noopener">官方通知 ↗</a><span class="pill">不含特殊项目</span></div>
+        </article>
+        <article class="panel province">
+          <div class="top"><h3>四川</h3><span class="tag">公开材料</span></div>
+          <p>三年平均生均教育培养成本：28674.78 元/生·年</p>
+          <div class="money">¥7,169</div>
+          <p>28674.78 × 25% ≈ 7169 元/年。</p>
+          <div class="source-row"><a href="https://fgw.sc.gov.cn/sfgw/tzgg/2023/1/18/1d1adaedfff94dc985bd2687a635ec42.shtml" target="_blank" rel="noopener">官方链接 ↗</a><span class="pill">同样方法核验</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" data-reveal>
+      <div class="panel table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>地区</th>
+              <th>看到的关键数字</th>
+              <th>计算方式</th>
+              <th>给家人的判断</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>重庆</td>
+              <td>年生均培养成本 3.33 万元</td>
+              <td>33300 × 25% = 8325</td>
+              <td class="ok">普通专业不是几万一年。</td>
+            </tr>
+            <tr>
+              <td>甘肃</td>
+              <td>生均培养定价成本 29090 元</td>
+              <td>29090 × 25% ≈ 7272</td>
+              <td class="ok">实际普通专业仍主要是几千元。</td>
+            </tr>
+            <tr>
+              <td>四川</td>
+              <td>平均生均培养成本 28674.78 元</td>
+              <td>28674.78 × 25% ≈ 7169</td>
+              <td class="ok">可以用同样方法查别的省。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="calc" class="wrap" data-reveal>
+      <div class="section-head">
+        <h2>输入数字，现场算。</h2>
+        <p class="note">默认填入重庆 33300 元。换成其他省份的官方成本数据，结果会自动更新。</p>
+      </div>
+      <div class="calc">
+        <div class="panel">
+          <h3>年生均教育培养成本</h3>
+          <div class="field">
+            <label for="cost">单位：元/生·年</label>
+            <input id="cost" type="number" inputmode="decimal" value="33300" min="0" step="100" />
+          </div>
+        </div>
+        <div class="panel result">
+          <div class="label">乘以 25% 后</div>
+          <div class="result-num" id="cap">¥8,325</div>
+          <p>这就是可对照的学费上限参照。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" data-reveal>
+      <div class="family">
+        <div class="panel">
+          <h2>家里真正要确认的，是这三项。</h2>
+        </div>
+        <div class="panel">
+          <div class="list">
+            <div class="item"><span class="num">1</span><span>是不是公办本科普通专业。</span></div>
+            <div class="item"><span class="num">2</span><span>学校招生章程里写的具体学费是多少。</span></div>
+            <div class="item"><span class="num">3</span><span>有没有中外合作、校企合作、艺术类高收费、住宿费等额外项目。</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources" class="wrap" data-reveal>
+      <div class="section-head">
+        <h2>来源可以直接打开。</h2>
+        <p class="note">能打开、能核验，才不用靠争论。</p>
+      </div>
+      <div class="source-list">
+        <a href="https://www.gov.cn/zhengce/zhengceku/2020-08/31/content_5538821.htm" target="_blank" rel="noopener"><span>国务院政策库：25% 比例来源</span><span>↗</span></a>
+        <a href="https://fzggw.cq.gov.cn/zwxx/tzgg/202505/t20250526_14655590_wap.html" target="_blank" rel="noopener"><span>重庆发改委：生均培养成本 3.33 万元</span><span>↗</span></a>
+        <a href="https://www.ghx.gov.cn/ghx/zfxxgk/fdzdgknr/xzsyxsf/art/2026/art_1501eee63d3641afb15cc5ad40d01e94.html" target="_blank" rel="noopener"><span>甘肃官方通知：成本与学费标准</span><span>↗</span></a>
+        <a href="https://fgw.sc.gov.cn/sfgw/tzgg/2023/1/18/1d1adaedfff94dc985bd2687a635ec42.shtml" target="_blank" rel="noopener"><span>四川发改委：生均培养成本公开材料</span><span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="quiet-foot wrap">整理成一页，是为了让重要信息更容易被看懂。</div>
+
+  <script>
+    const fmt = new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 0 });
+    const cost = document.querySelector('#cost');
+    const cap = document.querySelector('#cap');
+    function updateCap(){
+      const v = Number(cost.value || 0);
+      cap.textContent = '¥' + fmt.format(Math.round(v * 0.25));
+    }
+    cost.addEventListener('input', updateCap);
+    updateCap();
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.12});
+    document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
